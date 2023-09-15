@@ -457,7 +457,7 @@ resource "aws_lb_listener" "listener" {
 
 
 resource "aws_secretsmanager_secret" "rds_creds" {
-  name                    = "RDS_CREDS"
+  name                    = "RDS_CREDS_2"
   recovery_window_in_days = 0
 }
 
