@@ -86,7 +86,7 @@ jobs:
       if: always()
       run: |
         cd modules/${{ github.event.inputs.module }}
-        aws s3 cp ./terraform.tfstate s3://do-not-delete-awsgoat-state-files-${{ steps.account.outputs.ACCOUNT_ID }}/terraform.tfstate 
+        aws s3 cp ./terraform.tfstate s3://do-not-delete-awsgoat-state-files-${{ steps.account.outputs.ACCOUNT_ID }}-2/terraform.tfstate 
 
     # Terraform Output the API Gateway url
     - name: Application URL
